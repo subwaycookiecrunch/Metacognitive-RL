@@ -8,7 +8,7 @@ description: >
   human-review handoffs. Includes a synthetic OpenEnv research environment,
   an experimental budget-calibration reward, and saved Qwen2.5 LoRA training
   artifacts. No trained-model improvement or production accuracy is claimed.
-track: "Razorpay Buildathon 2026 — Track 05 Open Track"
+track: "Metacognitive RL — Open Track"
 environment:
   class: code_review_env.server.environment:CodeReviewEnvironment
   base: openenv.core.env_server.MCPEnvironment

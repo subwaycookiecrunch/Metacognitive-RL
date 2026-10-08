@@ -249,7 +249,7 @@ python benchmark.py
 No training starts on boot. Source stays on the local model endpoint by default.
 Requested review exports are stored under `.cache/reviews/`.
 ''')
-    gr.HTML('<footer class="footer"><b>THE THINKING BUDGET</b><span>Razorpay AI Buildathon · Open Track · Local prototype</span></footer>')
+    gr.HTML('<footer class="footer"><b>THE THINKING BUDGET</b><span>Metacognitive RL · Local prototype</span></footer>')
     app.load(model_status_html,outputs=[runtime])
 
 

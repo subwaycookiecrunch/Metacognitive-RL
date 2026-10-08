@@ -1,6 +1,6 @@
 # The Thinking Budget: system design and evidence report
 
-Razorpay Buildathon 2026 · Open Track · Local prototype
+Metacognitive RL · The Thinking Budget · Research Prototype
 
 ## Abstract
 

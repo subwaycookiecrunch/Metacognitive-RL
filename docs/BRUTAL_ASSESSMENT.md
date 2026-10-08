@@ -1,6 +1,6 @@
 # Submission assessment
 
-Audit date: 5 September 2026. Assessment against the four pillars in the supplied Razorpay Open Track brief. These are qualitative judgments, not official scores or predictions of selection.
+Audit date: 5 September 2026. Assessment against the four core evaluation pillars. These are qualitative judgments, not official scores or predictions of selection.
 
 ## The direct assessment
 

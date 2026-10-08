@@ -17,7 +17,7 @@ Give a reviewer a batch of source files and a fixed output budget. See where rev
 
 The product combines deterministic allocation with a model-based source reviewer. It exposes resource limits and failure states rather than implying that an incomplete review is complete. The bundled payment-idempotency example makes the workflow concrete; custom multi-file input lets a reviewer test it on different code.
 
-**Razorpay Buildathon · Track 05 — Open Track.** Start with [the judge guide](JUDGES.md). The local submission kit contains [a five-minute pitch](docs/PITCH_SCRIPT.md), [application answer drafts](docs/SUBMISSION_FORM.md), and [the candid assessment](docs/BRUTAL_ASSESSMENT.md).
+Start with [the project guide](JUDGES.md). The documentation kit contains [a five-minute pitch](docs/PITCH_SCRIPT.md), [project specifications](docs/SUBMISSION_FORM.md), and [the evaluation assessment](docs/BRUTAL_ASSESSMENT.md).
 
 ## Evidence first
 

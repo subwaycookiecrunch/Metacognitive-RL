@@ -2,7 +2,7 @@
   {
     "id": "checkout",
     "title": "Checkout refactor · 6 files",
-    "description": "A small payments team is adding automatic retries to checkout. Review the changed files before release. Source is a hand-authored synthetic fixture, not Razorpay production code.",
+    "description": "A small payments team is adding automatic retries to checkout. Review the changed files before release. Source is a hand-authored synthetic fixture, not production code.",
     "files": [
       {"path": "payments/checkout.py", "content": "import requests\n\ndef charge(order, gateway_url):\n    payload = {\n        'amount': order.amount_paise,\n        'currency': 'INR',\n        'customer_id': order.customer_id,\n    }\n    for attempt in range(3):\n        try:\n            response = requests.post(gateway_url + '/charges', json=payload, timeout=5)\n            response.raise_for_status()\n            return response.json()\n        except requests.Timeout:\n            if attempt == 2:\n                raise\n", "expected_issue": "Retries after an ambiguous timeout can repeat a successful charge because no stable idempotency key is sent."},
       {"path": "webhooks/handler.py", "content": "import json\n\ndef handle_payment_event(request, orders):\n    event = json.loads(request.body)\n    if event['type'] == 'payment.captured':\n        orders.mark_paid(event['data']['order_id'])\n    return {'status': 'accepted'}\n", "expected_issue": "The handler trusts caller-controlled payment events without authenticating the webhook signature."},

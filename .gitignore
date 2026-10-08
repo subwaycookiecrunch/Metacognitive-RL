@@ -11,6 +11,7 @@ venv/
 .DS_Store
 .vscode/
 .idea/
+*.mov
 
 # Training artefacts (only canonical outputs are committed)
 grpo_output/checkpoints/
